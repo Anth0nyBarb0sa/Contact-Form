@@ -21,9 +21,12 @@ $email->addContent("text/html", $txt);
 $sendgrid = new \SendGrid(getenv('SENDGRID_API_KEY'));
 try {
     $response = $sendgrid->send($email);
-    print $response->statusCode() . "\n";
-    print_r($response->headers());
-    print $response->body() . "\n";
+    //print $response->statusCode() . "\n";
+    //print_r($response->headers());
+    //print $response->body() . "\n";
+    include 'worked.html';
+
+    
 } catch (Exception $e) {
     echo 'Caught exception: '. $e->getMessage() ."\n";
 }
