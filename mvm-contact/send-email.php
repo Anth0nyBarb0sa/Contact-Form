@@ -18,7 +18,7 @@ $email->setSubject($subject);
 $email->addTo("abarbosacode@gmail.com", "Contact Form Request");
 $email->addContent("text/plain", $txt);
 $email->addContent(
-    "text/html", "$txt"
+    "text/html", $txt
 );
 $sendgrid = new \SendGrid(getenv('SENDGRID_API_KEY'));
 try {
