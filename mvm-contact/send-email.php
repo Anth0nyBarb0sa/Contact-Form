@@ -2,11 +2,11 @@
 require 'vendor/autoload.php'; 
 
 //initalize
-$name = $_POST['name'];
-$mailfrom = $_POST['mail'];
-$subject = $_POST['subject'];
-$message = $_POST['message'];
-$txt = "You have received an e-mail from ".$name.".\n\n Their Email: ".$mailfrom.".\n\n  Subject: ".$subject."\n\n Message: ".$message;
+//$name = $_POST['name'];
+//$mailfrom = $_POST['mail'];
+//$subject = $_POST['subject'];
+//$message = $_POST['message'];
+//$txt = "You have received an e-mail from ".$name.".\n\n Their Email: ".$mailfrom.".\n\n  Subject: ".$subject."\n\n Message: ".$message;
 
 
 
@@ -14,12 +14,10 @@ $txt = "You have received an e-mail from ".$name.".\n\n Their Email: ".$mailfrom
 
 $email = new \SendGrid\Mail\Mail(); 
 $email->setFrom("info@myvuemedia.com", "Contact Form Request");
-$email->setSubject($subject);
+$email->setSubject("sub");
 $email->addTo("abarbosacode@gmail.com", "Contact Form Request");
-$email->addContent("text/plain", $txt);
-$email->addContent(
-    "text/html", $txt
-);
+$email->addContent("text/plain", "Hello World");
+$email->addContent("text/html", "Hello World");
 $sendgrid = new \SendGrid(getenv('SENDGRID_API_KEY'));
 try {
     $response = $sendgrid->send($email);
