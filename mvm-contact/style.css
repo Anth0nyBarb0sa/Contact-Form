@@ -2,38 +2,49 @@
     border-radius: 5px;
     background-color: #ffffff;
     padding: 20px;
-  }
+}
 
-  input[type=text], select, textarea {
-    width: 100%; /* Full width */
-    padding: 16px; /* Some padding */ 
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    /* Full width */
+    padding: 16px;
+    /* Some padding */
     border: 2px solid #8aafca;
-    
-    border-radius: 5px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
-    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
-
-    font-family:"Spartan", serif;  
+    border-radius: 5px;
+    /* Rounded borders */
+    box-sizing: border-box;
+    /* Make sure that padding and width stays in place */
+    margin-top: 6px;
+    /* Add a top margin */
+    margin-bottom: 16px;
+    /* Bottom margin */
+    resize: vertical;
+    /* Allow the user to vertically resize the textarea (not horizontally) */
+    font-family: "Spartan", serif;
     font-size: 15px;
-  }
-  input:focus {
-    width: 100%; /* Full width */
-    padding: 16px; /* Some padding */ 
-    border: 2px solid #0b5082;
-    
-    border-radius: 5px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-  }
-  
+}
 
-  
-  .button {
-    background-color: #0b5082; 
+input:focus {
+    width: 100%;
+    /* Full width */
+    padding: 16px;
+    /* Some padding */
+    border: 2px solid #0b5082;
+    border-radius: 5px;
+    /* Rounded borders */
+    box-sizing: border-box;
+    /* Make sure that padding and width stays in place */
+    margin-top: 6px;
+    /* Add a top margin */
+    margin-bottom: 16px;
+    /* Bottom margin */
+    resize: vertical/* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+.button {
+    background-color: #0b5082;
     border: none;
     border-radius: 5px;
     color: white;
@@ -42,62 +53,45 @@
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    width: 100%; /* Full width */
+    width: 100%;
+    /* Full width */
     line-height: 2px;
-  }
-
-  .button-font{
-    font-size: 15px;
-  }
-
-  textarea {
-    font-family:"Spartan", serif;  
-   font-size: 15px; 
-    height: 150px;
-  }
-
-  
-
-
-
-
-.material-icons {
-  font-family: 'Material Icons';
-  font-weight: normal;
-  font-style: normal;
-  font-size: 24px;  /* Preferred icon size */
-  display: inline-block;
-  line-height: 1;
-  text-transform: none;
-  letter-spacing: normal;
-  word-wrap: normal;
-  white-space: nowrap;
-  direction: ltr;
-  padding-right: 16px;
-
-  /* Support for all WebKit browsers. */
-  -webkit-font-smoothing: antialiased;
-  /* Support for Safari and Chrome. */
-  text-rendering: optimizeLegibility;
-
-  /* Support for Firefox. */
-  -moz-osx-font-smoothing: grayscale;
-
-  /* Support for IE. */
-  font-feature-settings: 'liga';
 }
 
+.button-font {
+    font-size: 15px;
+}
 
+textarea {
+    font-family: "Spartan", serif;
+    font-size: 15px;
+    height: 150px;
+}
 
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    padding-right: 16px;
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
 
-
-
-
-
-
-
-
-/*
-final mainColor = const Color(0xff8aafca);
-final fontColor = const Color(0xff0b5082);
-*/
+.center {
+    text-align: center;
+}

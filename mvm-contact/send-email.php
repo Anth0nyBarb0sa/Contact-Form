@@ -24,9 +24,10 @@ try {
     //print $response->statusCode() . "\n";
     //print_r($response->headers());
     //print $response->body() . "\n";
-    include 'worked.html';
+    include 'submission.html';
 
     
 } catch (Exception $e) {
     echo 'Caught exception: '. $e->getMessage() ."\n";
+    include 'fail.html';
 }
