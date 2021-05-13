@@ -15,7 +15,7 @@ $txt = "You have received an e-mail from ".$name.".\n\n Their Email: ".$mailfrom
 $email = new \SendGrid\Mail\Mail(); 
 $email->setFrom("info@myvuemedia.com", "Contact Form Request");
 $email->setSubject($subject);
-$email->addTo("abarbosacode@gmail.com", "Contact Form Request");
+$email->addTo("info@myvuemedia.com", "Contact Form Request");
 $email->addContent("text/plain", $txt);
 $email->addContent("text/html", $txt);
 $sendgrid = new \SendGrid(getenv('SENDGRID_API_KEY'));
